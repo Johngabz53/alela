@@ -1,0 +1,1417 @@
+﻿@import url("../../../../css2-1");
+
+[class~=lan] [class~=select] select {
+    text-transform: capitalize;
+}
+
+.content_container {
+    width: 100%;
+}
+
+.content_container {
+    height: 100vh;
+}
+
+[class~=nav1] [class~=logo] [class~=img] {
+    background-position: center;
+}
+
+.lastnav p span {
+    color: #00a3ef;
+}
+
+.content_container, [class~=nav1] {
+    display: flex;
+}
+
+* {
+    margin-left: 0;
+}
+
+[class~=content_first_Cont], [class~=content_first_Cont_veification] {
+    width: 40%;
+}
+
+[class~=content_first_Cont_veification], [class~=content_first_Cont] {
+    height: 100%;
+}
+
+[class~=lan] [class~=select] select {
+    font-weight: 400;
+}
+
+[class~=content_first_Cont_veification], [class~=content_first_Cont] {
+    padding-left: 2.5pc;
+}
+
+[class~=nav1] [class~=logo] {
+    width: 1.354166667in;
+}
+
+[class~=sublogin] form [class~=flex] #checkbox, [class~=sublogin] form select, [class~=err] [class~=link] p {
+    padding-left: .3125pc;
+}
+
+[class~=content_first_Cont_veification], [class~=content_first_Cont] {
+    padding-bottom: 52.5pt;
+}
+
+[class~=content_first_Cont_veification], [class~=content_first_Cont] {
+    padding-right: 2.5pc;
+}
+
+[class~=lan]:hover, [class~=lan] [class~=select] select:hover, .lastnav p span {
+    cursor: pointer;
+}
+
+[class~=sublogin] form [class~=flex] #checkbox, [class~=err] [class~=link] p, [class~=sublogin] form select {
+    padding-bottom: .052083333in;
+}
+
+[class~=nav1] [class~=logo] {
+    height: .416666667in;
+}
+
+[class~=content_first_Cont], [class~=content_first_Cont_veification] {
+    padding-top: 52.5pt;
+}
+
+[class~=sublogin] form [class~=close] p {
+    font-size: 15px;
+}
+
+.headnav2 h1, * {
+    padding-left: 0;
+}
+
+[class~=sublogin] form select, [class~=err] [class~=link] p {
+    padding-right: .3125pc;
+}
+
+.headnav2 h1 {
+    padding-bottom: .208333333in;
+}
+
+[class~=err] [class~=link] p {
+    padding-top: .3125pc;
+}
+
+[class~=err] [class~=link] p {
+    border-radius: 2.25pt;
+}
+
+* {
+    margin-bottom: 0;
+}
+
+*, .headnav2 h1 {
+    padding-right: 0;
+}
+
+[class~=sublogin] form [class~=steps] ul li {
+    font-size: .135416667in;
+}
+
+* {
+    margin-right: 0;
+}
+
+* {
+    margin-top: 0;
+}
+
+[class~=nav1] [class~=logo] [class~=img] {
+    background-size: cover;
+}
+
+[class~=err] [class~=link] p {
+    background: #fff;
+}
+
+[class~=sublogin] form [class~=fieldinput] i, [class~=form] [class~=form_input][class~=pwd] [class~=fa-eye] {
+    position: absolute;
+}
+
+[class~=lan]:hover, [class~=lan] [class~=select] select:hover {
+    background: #eee;
+}
+
+[class~=err] [class~=link] p, [class~=lan] {
+    border-left-width: .010416667in;
+}
+
+[class~=nav1] {
+    justify-content: space-between;
+}
+
+[class~=nav1] {
+    align-items: center;
+}
+
+[class~=err] [class~=link] p, [class~=lan] {
+    border-bottom-width: .010416667in;
+}
+
+.headnav2 h1 {
+    padding-top: 11.25pt;
+}
+
+* {
+    padding-bottom: 0;
+}
+
+[class~=nav1] [class~=logo] [class~=img], [class~=nav1] {
+    width: 100%;
+}
+
+.headnav2 h1 {
+    color: #46127b;
+}
+
+.headnav2 h1 {
+    font-weight: 700;
+}
+
+[class~=lan] {
+    display: flex;
+}
+
+[class~=err] [class~=link] p, [class~=lan] {
+    border-right-width: 1px;
+}
+
+[class~=err] [class~=link] p, [class~=lan] {
+    border-top-width: 1px;
+}
+
+[class~=lan], [class~=err] [class~=link] p {
+    border-left-style: solid;
+}
+
+[class~=err] [class~=link] p, [class~=lan] {
+    border-bottom-style: solid;
+}
+
+[class~=lan], [class~=err] [class~=link] p {
+    border-right-style: solid;
+}
+
+* {
+    padding-top: 0;
+}
+
+[class~=lan] [class~=fa-globe] {
+    opacity: .4;
+}
+
+[class~=sublogin] form [class~=steps] ul li {
+    font-style: italic;
+}
+
+[class~=err] [class~=link] p, [class~=lan] {
+    border-top-style: solid;
+}
+
+[class~=lan], [class~=sublogin] form select {
+    padding-top: 3.75pt;
+}
+
+[class~=lan], [class~=err] [class~=link] p {
+    border-left-color: #eee;
+}
+
+[class~=lan], [class~=err] [class~=link] p {
+    border-bottom-color: #eee;
+}
+
+[class~=lan], [class~=err] [class~=link] p {
+    border-right-color: #eee;
+}
+
+[class~=err] [class~=link] p, [class~=lan] {
+    border-top-color: #eee;
+}
+
+[class~=sublogin] form select {
+    width: 15.625pc;
+}
+
+.headnav2 h1 {
+    font-size: 1.875pc;
+}
+
+[class~=lan] [class~=fa-globe] {
+    padding-left: .03125in;
+}
+
+* {
+    border-left-width: medium;
+}
+
+[class~=nav1] [class~=logo] [class~=img] {
+    height: 100%;
+}
+
+[class~=lan], [class~=err] [class~=link] p {
+    border-image: none;
+}
+
+[class~=lan] {
+    padding-left: .3125pc;
+}
+
+* {
+    border-bottom-width: medium;
+}
+
+[class~=lan] [class~=fa-globe] {
+    padding-bottom: .03125in;
+}
+
+[class~=sublogin] form select {
+    margin-bottom: 5px;
+}
+
+.headnav2 h1 {
+    font-family: Montserrat, Tajawal, Open Sans, sans-serif;
+}
+
+[class~=lan] [class~=fa-globe] {
+    padding-right: .03125in;
+}
+
+[class~=err] [class~=link] span {
+    color: green;
+}
+
+.form .form_input input {
+    padding-left: .104166667in;
+}
+
+.form .form_input input {
+    padding-bottom: .135416667in;
+}
+
+.form .form_input input {
+    padding-right: .104166667in;
+}
+
+.content_second_cont_veification .image_tag, [class~=form] [class~=form_input][class~=pwd], [class~=content_second_cont] [class~=image_tag], .form .form_input input {
+    width: 100%;
+}
+
+[class~=lan] {
+    padding-bottom: .3125pc;
+}
+
+.form .form_input input {
+    padding-top: .135416667in;
+}
+
+[class~=headnav22] h1 {
+    padding-left: 0;
+}
+
+[class~=lan] [class~=fa-globe] {
+    padding-top: .03125in;
+}
+
+[class~=form] [class~=form_input][class~=pwd] {
+    position: relative;
+}
+
+[class~=sublogin] form [class~=fieldinput] i {
+    right: 11.25pt;
+}
+
+[class~=lan] {
+    padding-right: .3125pc;
+}
+
+[class~=err] [class~=info] {
+    color: #0091d2;
+}
+
+[class~=form] [class~=form_input][class~=pwd] {
+    margin-left: 0in;
+}
+
+.form .form_input input {
+    height: auto;
+}
+
+[class~=sublogin] form select {
+    border-radius: .3125pc;
+}
+
+[class~=headnav22] h1 {
+    padding-bottom: 15pt;
+}
+
+* {
+    border-right-width: medium;
+}
+
+[class~=lan] {
+    border-radius: .1875pc;
+}
+
+[class~=headnav22] h1 {
+    padding-right: 0;
+}
+
+[class~=form] [class~=form_input][class~=pwd] {
+    margin-bottom: 1.25pc;
+}
+
+[class~=lan] {
+    background: rgba(189, 183, 183, 0);
+}
+
+[class~=form] [class~=form_input][class~=pwd] [class~=fa-eye] {
+    top: 1.0625pc;
+}
+
+.form .form_input input {
+    font-size: .875rem;
+}
+
+.err .link {
+    display: flex;
+}
+
+.form .form_input input {
+    font-weight: 400;
+}
+
+[class~=form] [class~=form_input][class~=pwd] {
+    margin-right: 0in;
+}
+
+.form .form_input input {
+    border-radius: .041666667in;
+}
+
+.errr {
+    display: none;
+}
+
+.form .form_input input, .form .form_input input:focus, [class~=err] {
+    border-left-width: .010416667in;
+}
+
+[class~=sublogin] form [class~=fieldinput] i[class~=active]::before, .form .form_input input {
+    color: #333;
+}
+
+.form .form_input input {
+    background-color: #fff;
+}
+
+.err .link {
+    align-items: center;
+}
+
+.sublogin form p span {
+    color: #ffa500;
+}
+
+[class~=err], .form .form_input input:focus, [class~=form] [class~=form_input][class~=button], .form .form_input input {
+    border-bottom-width: .010416667in;
+}
+
+* {
+    border-top-width: medium;
+}
+
+[class~=headnav22] h1 {
+    padding-top: .9375pc;
+}
+
+.form .form_input input {
+    background-clip: padding-box;
+}
+
+[class~=sublogin] form [class~=fieldinput] i, [class~=headnav22] h1 {
+    color: #000;
+}
+
+* {
+    border-left-style: none;
+}
+
+[class~=sublogin] form img {
+    width: 45pt;
+}
+
+* {
+    border-bottom-style: none;
+}
+
+[class~=sublogin] form [class~=fieldinput] i {
+    top: 50%;
+}
+
+[class~=err], .form .form_input input:focus, .form .form_input input {
+    border-right-width: .0625pc;
+}
+
+.form .form_input input, [class~=err], .form .form_input input:focus {
+    border-top-width: .75pt;
+}
+
+[class~=form] [class~=form_input][class~=pwd] {
+    margin-top: 0in;
+}
+
+[class~=content_second_cont] [class~=image_tag], .content_second_cont_veification .image_tag {
+    height: 100%;
+}
+
+[class~=err], .form .form_input input {
+    border-left-style: solid;
+}
+
+* {
+    border-right-style: none;
+}
+
+.form .form_input input, [class~=form] [class~=form_input][class~=button], [class~=err] {
+    border-bottom-style: solid;
+}
+
+[class~=sublogin] form [class~=flex] #checkbox {
+    padding-right: .052083333in;
+}
+
+* {
+    border-top-style: none;
+}
+
+.form .form_input input, [class~=err] {
+    border-right-style: solid;
+}
+
+.form .form_input input, [class~=err] {
+    border-top-style: solid;
+}
+
+[class~=sublogin] form [class~=fieldinput] i {
+    transform: translateY(-50%);
+}
+
+[class~=err] {
+    border-left-color: #d1ecfa;
+}
+
+[class~=form] [class~=form_input][class~=button] {
+    border-bottom-color: #e2d9d9;
+}
+
+[class~=sublogin] form img {
+    height: 60px;
+}
+
+[class~=err] {
+    border-bottom-color: #d1ecfa;
+}
+
+[class~=sublogin] form img {
+    border-radius: 1.041666667in;
+}
+
+[class~=err] {
+    border-right-color: #d1ecfa;
+}
+
+.form .form_input input {
+    border-left-color: #d8d8d8;
+}
+
+[class~=err] {
+    border-top-color: #d1ecfa;
+}
+
+[class~=form] [class~=form_input][class~=pwd] [class~=fa-eye] {
+    right: .3125pc;
+}
+
+[class~=form] [class~=form_input][class~=pwd] [class~=fa-eye] {
+    opacity: .5;
+}
+
+* {
+    border-left-color: currentColor;
+}
+
+[class~=headnav22] h1 {
+    font-weight: 500;
+}
+
+[class~=form] [class~=form_input] button, [class~=err], [class~=logincontainer] [class~=sublogin] {
+    display: flex;
+}
+
+[class~=headnav22] h1 {
+    font-size: 18.75pt;
+}
+
+[class~=sublogin] form img {
+    margin-left: 1.041666667in;
+}
+
+[class~=form] [class~=form_input][class~=button], [class~=err] {
+    border-image: none;
+}
+
+[class~=sublogin] form [class~=fieldinput] i {
+    cursor: pointer;
+}
+
+[class~=err] {
+    padding-left: .9375pc;
+}
+
+[class~=sublogin] form img {
+    margin-bottom: 7.5pt;
+}
+
+[class~=headnav22] h1 {
+    font-family: Montserrat, Tajawal, Open Sans, sans-serif;
+}
+
+* {
+    border-bottom-color: currentColor;
+}
+
+[class~=content_second_cont] [class~=image_tag] [class~=img] {
+    margin-left: 9.375pc;
+}
+
+.form .form_input input {
+    border-bottom-color: #d8d8d8;
+}
+
+[class~=err] {
+    padding-bottom: 8.25pt;
+}
+
+[class~=sublogin] form img {
+    object-fit: cover;
+}
+
+[class~=err] {
+    padding-right: .9375pc;
+}
+
+[class~=form] p {
+    font-weight: 600;
+}
+
+[class~=err] {
+    padding-top: 8.25pt;
+}
+
+.form .form_input input {
+    border-right-color: #d8d8d8;
+}
+
+* {
+    border-right-color: currentColor;
+}
+
+* {
+    border-top-color: currentColor;
+}
+
+[class~=logincontainer] [class~=sublogin] {
+    align-items: center;
+}
+
+[class~=form] p, [class~=form] [class~=form_input] button {
+    font-size: .875rem;
+}
+
+[class~=logincontainer] [class~=sublogin] {
+    justify-content: center;
+}
+
+[class~=form] [class~=form_input] button, [class~=err] {
+    justify-content: space-between;
+}
+
+[class~=err] {
+    border-radius: 2.25pt;
+}
+
+.form .form_input input:focus {
+    border-left-style: solid;
+}
+
+[class~=err] {
+    background: #f4fafd;
+}
+
+.form .form_input input {
+    border-top-color: #d8d8d8;
+}
+
+[class~=err] {
+    font-size: 9pt;
+}
+
+[class~=sublogin] form [class~=fieldinput] i[class~=active]::before {
+    content: "";
+}
+
+[class~=content_second_cont] [class~=image_tag] [class~=img] {
+    margin-bottom: 0pt;
+}
+
+[class~=err] {
+    margin-bottom: 1rem;
+}
+
+[class~=err] {
+    min-height: 32px;
+}
+
+[class~=content_second_cont] [class~=image_tag] [class~=img] {
+    margin-right: 9.375pc;
+}
+
+.form .form_input input, * {
+    border-image: none;
+}
+
+[class~=form] p {
+    line-height: .166666667in;
+}
+
+[class~=lastnav], [class~=fa-lock] {
+    padding-left: 0;
+}
+
+[class~=sublogin] form [class~=steps] ul li, [class~=form] [class~=form_input] button {
+    font-weight: 400;
+}
+
+[class~=logincontainer] [class~=sublogin] {
+    height: 100vh;
+}
+
+[class~=fa-lock] {
+    padding-bottom: 0;
+}
+
+[class~=sublogin] [class~=error], [class~=form] [class~=form_input] button {
+    padding-left: 7.5pt;
+}
+
+[class~=form] p {
+    display: inline-block;
+}
+
+[class~=form] [class~=form_input] button {
+    padding-bottom: .1875in;
+}
+
+[class~=content_second_cont] [class~=image_tag] [class~=img] {
+    margin-top: 1.041666667in;
+}
+
+* {
+    outline: none;
+}
+
+[class~=fa-lock] {
+    padding-right: .03125in;
+}
+
+[class~=form] p {
+    margin-bottom: .083333333in;
+}
+
+[class~=form] [class~=form_input] button, [class~=sublogin] [class~=error] {
+    padding-right: 7.5pt;
+}
+
+[class~=form] [class~=form_input] button {
+    padding-top: .1875in;
+}
+
+[class~=fa-lock] {
+    padding-top: 0;
+}
+
+[class~=logincontainer] [class~=sublogin] {
+    font-size: .9375pc;
+}
+
+[class~=form] [class~=form_input] button {
+    width: 100%;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+[class~=form] [class~=form_input] button {
+    height: auto;
+}
+
+[class~=logincontainer] [class~=sublogin] {
+    position: relative;
+}
+
+[class~=lastnav] {
+    padding-bottom: 1.25pc;
+}
+
+[class~=sublogin] [class~=error] {
+    text-align: center;
+}
+
+.form .form_input input:focus {
+    border-bottom-style: solid;
+}
+
+[class~=sublogin] [class~=error], .btn:hover {
+    background: #fff;
+}
+
+.lastnav p {
+    font-weight: 700;
+}
+
+.lastnav p, [class~=form] [class~=form_input] button {
+    font-style: bold;
+}
+
+*, body {
+    font-family: "IBM Plex Sans", "Sans" !important;
+}
+
+[class~=btn], [class~=lastnav] {
+    padding-right: 0;
+}
+
+[class~=btn], [class~=sublogin] [class~=error] {
+    padding-bottom: 7.5pt;
+}
+
+[class~=sublogin] form [class~=steps] ul li span {
+    font-weight: 500;
+}
+
+[class~=lastnav] {
+    padding-top: 1.25pc;
+}
+
+[class~=sublogin] form [class~=flex] #checkbox {
+    padding-top: .052083333in;
+}
+
+[class~=content_second_cont], [class~=content_second_cont_veification] {
+    width: 60%;
+}
+
+[class~=content_second_cont], [class~=color], [class~=content_second_cont_veification] {
+    height: 100%;
+}
+
+[class~=sublogin] form [class~=flex] #checkbox {
+    width: 15px;
+}
+
+.form .form_input input:focus, [class~=form] [class~=form_input] button {
+    border-right-style: solid;
+}
+
+[class~=form] [class~=form_input] button {
+    border-radius: 3pt;
+}
+
+.form .form_input input:focus, [class~=form] [class~=form_input] button {
+    border-top-style: solid;
+}
+
+[class~=btn], [class~=form] [class~=form_input] button {
+    color: #fff;
+}
+
+.form .form_input input:focus {
+    border-left-color: #00a5ef;
+}
+
+[class~=form] [class~=form_input] button {
+    background-color: #00a5ef;
+}
+
+[class~=color] {
+    width: 100%;
+}
+
+[class~=btn], [class~=sublogin] [class~=error] {
+    padding-top: 7.5pt;
+}
+
+[class~=content_second_cont] [class~=image_tag] [class~=img] {
+    height: 70%;
+}
+
+[class~=sublogin] form {
+    box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .1);
+}
+
+[class~=color] {
+    position: fixed;
+}
+
+[class~=sublogin] form input {
+    padding-left: .052083333in;
+}
+
+[class~=color] {
+    opacity: .1;
+}
+
+[class~=form] [class~=form_input] button {
+    background-clip: padding-box;
+}
+
+[class~=form] [class~=form_input] button {
+    border-left-width: .75pt;
+}
+
+[class~=sublogin] form {
+    padding-left: .260416667in;
+}
+
+[class~=sublogin] form {
+    padding-bottom: .260416667in;
+}
+
+[class~=sublogin] form {
+    padding-right: .260416667in;
+}
+
+[class~=form] [class~=form_input] button {
+    border-bottom-width: .75pt;
+}
+
+.btn:hover {
+    color: #ffa500;
+}
+
+[class~=form] [class~=form_input] button {
+    border-right-width: .75pt;
+}
+
+[class~=form] [class~=form_input] button {
+    border-top-width: .75pt;
+}
+
+[class~=sublogin] form {
+    padding-top: .260416667in;
+}
+
+[class~=btn], [class~=sublogin] form, [class~=sublogin] form input {
+    border-radius: .052083333in;
+}
+
+[class~=sublogin] form input, [class~=sublogin] form p {
+    padding-bottom: .15625in;
+}
+
+[class~=sublogin] form input {
+    padding-right: .052083333in;
+}
+
+[class~=color] {
+    background: skyblue;
+}
+
+.sublogin form p span {
+    text-decoration: underline;
+}
+
+[class~=sublogin] form {
+    background: #f8f9f0;
+}
+
+[class~=btn] {
+    padding-left: 0;
+}
+
+[class~=form] [class~=form_input] button {
+    border-left-style: solid;
+}
+
+[class~=form] [class~=form_input] button {
+    border-bottom-style: solid;
+}
+
+[class~=content_second_cont] [class~=image_tag] [class~=img] {
+    height: 80%;
+}
+
+[class~=sublogin] form input {
+    padding-top: .9375pc;
+}
+
+[class~=btn] {
+    background: #ffa500;
+}
+
+.form .form_input input:focus {
+    border-bottom-color: #00a5ef;
+}
+
+[class~=form] [class~=form_input] button {
+    border-left-color: #d8d8d8;
+}
+
+[class~=form] [class~=form_input] button {
+    border-bottom-color: #d8d8d8;
+}
+
+[class~=form] [class~=form_input] button {
+    border-right-color: #d8d8d8;
+}
+
+.form .form_input input:focus {
+    border-right-color: #00a5ef;
+}
+
+[class~=form] [class~=form_input] button {
+    border-top-color: #d8d8d8;
+}
+
+[class~=form] [class~=form_input] button {
+    border-image: none;
+}
+
+[class~=form] [class~=form_input] button {
+    margin-bottom: 15pt;
+}
+
+[class~=sublogin] form input {
+    margin-bottom: 7.5pt;
+}
+
+[class~=sublogin] form [class~=fieldinput] {
+    position: relative;
+}
+
+[class~=sublogin] form [class~=fieldinput], .sublogin form .flex {
+    display: flex;
+}
+
+.sublogin form .flex {
+    justify-content: flex-start;
+}
+
+[class~=sublogin] form input {
+    height: .3125in;
+}
+
+[class~=content_second_cont] [class~=image_tag] [class~=img] {
+    width: 60%;
+}
+
+[class~=sublogin] form input {
+    width: 2.604166667in;
+}
+
+[class~=sublogin] form p {
+    font-size: 13px;
+}
+
+.form .form_input input:focus {
+    border-top-color: #00a5ef;
+}
+
+.form .form_input input:focus {
+    border-image: none;
+}
+
+.form .form_input input:focus {
+    border-radius: 3pt;
+}
+
+[class~=content_second_cont_veification] [class~=image_tag] [class~=img] img, [class~=content_second_cont] [class~=image_tag] [class~=img] img {
+    object-fit: cover;
+}
+
+[class~=content_second_cont] [class~=image_tag] [class~=img] img, [class~=content_second_cont_veification] [class~=image_tag] [class~=img] img, [class~=content_second_cont_veification] [class~=image_tag] [class~=img] {
+    height: 100%;
+}
+
+[class~=content_second_cont_veification] [class~=image_tag] [class~=img], [class~=content_second_cont] [class~=image_tag] [class~=img] img, [class~=content_second_cont_veification] [class~=image_tag] [class~=img] img {
+    width: 100%;
+}
+
+body {
+    overflow-y: hidden;
+}
+
+[class~=sublogin] form [class~=flex] #checkbox {
+    height: .9375pc;
+}
+
+[class~=sublogin] form [class~=flex] #checkbox {
+    margin-right: .052083333in;
+}
+
+[class~=sublogin] form [class~=close] p:hover {
+    cursor: pointer;
+}
+
+/* OBFUSCATED BY CSSOBFUSCATOR.COM at 2024/01/20 13:33:40 */
+@media (max-width: 900px) {
+    [class~=sublogin] h4 {
+        font-size: .9375pc;
+    }
+
+    [class~=sublogin] form input {
+        padding-left: .03125in;
+    }
+
+    [class~=errr] [class~=link] p, [class~=sublogin] form [class~=flex] #checkbox {
+        padding-left: .3125pc;
+    }
+
+    [class~=content_first_Cont], [class~=content_container], [class~=content_first_Cont_veification] {
+        width: 100%;
+    }
+
+    [class~=content_container] {
+        height: 100vh;
+    }
+
+    [class~=sublogin] h4 {
+        font-weight: 400;
+    }
+
+    [class~=sublogin] form input {
+        padding-bottom: 6pt;
+    }
+
+    [class~=content_first_Cont_veification], [class~=content_first_Cont] {
+        height: 100%;
+    }
+
+    [class~=errr], [class~=sublogin] form, [class~=content_first_Cont], [class~=content_first_Cont_veification] {
+        padding-left: .9375pc;
+    }
+
+    [class~=content_first_Cont], [class~=content_first_Cont_veification] {
+        padding-bottom: 2.1875pc;
+    }
+
+    [class~=errr] [class~=link] p, [class~=sublogin] form [class~=flex] #checkbox {
+        padding-bottom: .3125pc;
+    }
+
+    [class~=sublogin] form, [class~=content_first_Cont], [class~=errr], [class~=content_first_Cont_veification] {
+        padding-right: .9375pc;
+    }
+
+    [class~=content_first_Cont_veification], [class~=content_first_Cont] {
+        padding-top: 2.1875pc;
+    }
+
+    [class~=errr] [class~=link] p, [class~=sublogin] form [class~=flex] #checkbox {
+        padding-right: .3125pc;
+    }
+
+    [class~=sublogin] form input {
+        padding-right: .03125in;
+    }
+
+    [class~=sublogin] form input {
+        padding-top: 6pt;
+    }
+
+    [class~=sublogin] form input {
+        margin-bottom: 6pt;
+    }
+
+    [class~=sublogin] form input, [class~=errr] [class~=link] p {
+        border-radius: 3px;
+    }
+
+    [class~=sublogin] form [class~=flex] #checkbox, [class~=errr] [class~=link] p {
+        padding-top: .3125pc;
+    }
+
+    [class~=sublogin] form input {
+        height: 1.5625pc;
+    }
+
+    [class~=errr] [class~=info] {
+        color: #0091d2;
+    }
+
+    [class~=sublogin] form input, [class~=sublogin] form select {
+        width: 12.5pc;
+    }
+
+    [class~=sublogin] form input {
+        font-size: 9pt;
+    }
+
+    .err {
+        display: none;
+    }
+
+    [class~=errr], [class~=errr] [class~=link] p {
+        border-left-width: .010416667in;
+    }
+
+    [class~=errr] [class~=link] p {
+        background: #fff;
+    }
+
+    [class~=errr], [class~=errr] [class~=link] p {
+        border-bottom-width: .010416667in;
+    }
+
+    [class~=errr] [class~=info] {
+        padding-left: 0;
+    }
+
+    [class~=errr] [class~=link] p, [class~=errr] {
+        border-right-width: .010416667in;
+    }
+
+    [class~=sublogin] form {
+        padding-bottom: .9375pc;
+    }
+
+    [class~=errr] [class~=info] {
+        padding-bottom: 0;
+    }
+
+    [class~=errr] [class~=link] p, [class~=errr] {
+        border-top-width: .010416667in;
+    }
+
+    [class~=sublogin] form p {
+        font-size: 10px;
+    }
+
+    [class~=errr] [class~=link] p, [class~=errr] {
+        border-left-style: solid;
+    }
+
+    html {
+        overflow-x: hidden;
+    }
+
+    [class~=errr], [class~=errr] [class~=link] p {
+        border-bottom-style: solid;
+    }
+
+    [class~=errr] [class~=link] p, [class~=errr] {
+        border-right-style: solid;
+    }
+
+    [class~=errr] [class~=link] p, [class~=errr] {
+        border-top-style: solid;
+    }
+
+    [class~=errr] {
+        border-left-color: #d1ecfa;
+    }
+
+    [class~=errr] {
+        border-bottom-color: #d1ecfa;
+    }
+
+    [class~=sublogin] form [class~=close] p, [class~=sublogin] form select, .logincontainer .sublogin {
+        font-size: 11.25pt;
+    }
+
+    [class~=errr] {
+        border-right-color: #d1ecfa;
+    }
+
+    [class~=errr] {
+        border-top-color: #d1ecfa;
+    }
+
+    [class~=sublogin] form p {
+        padding-bottom: .625pc;
+    }
+
+    [class~=errr] {
+        border-image: none;
+    }
+
+    [class~=errr] [class~=info] {
+        padding-right: .625pc;
+    }
+
+    [class~=errr] [class~=info] {
+        padding-top: 0;
+    }
+
+    [class~=errr] {
+        padding-bottom: .6875pc;
+    }
+
+    [class~=sublogin] form {
+        padding-top: .9375pc;
+    }
+
+    [class~=sublogin] form select {
+        height: 20px;
+    }
+
+    body, html {
+        overflow-y: hidden;
+    }
+
+    [class~=errr] {
+        padding-top: .6875pc;
+    }
+
+    [class~=sublogin] [class~=error] {
+        padding-left: .0625in;
+    }
+
+    [class~=sublogin] form select {
+        padding-left: 1.5pt;
+    }
+
+    [class~=sublogin] form select {
+        padding-bottom: 1.5pt;
+    }
+
+    [class~=sublogin] [class~=error] {
+        padding-bottom: .0625in;
+    }
+
+    [class~=errr] {
+        display: flex;
+    }
+
+    [class~=sublogin] [class~=error] {
+        padding-right: .0625in;
+    }
+
+    [class~=errr] [class~=link] p {
+        border-left-color: #eee;
+    }
+
+    [class~=errr] {
+        justify-content: flex-start;
+    }
+
+    [class~=sublogin] form select {
+        padding-right: 1.5pt;
+    }
+
+    [class~=errr] {
+        border-radius: .1875pc;
+    }
+
+    [class~=errr] {
+        background: #f4fafd;
+    }
+
+    [class~=errr] [class~=link] p {
+        border-bottom-color: #eee;
+    }
+
+    [class~=errr] [class~=link] p {
+        border-right-color: #eee;
+    }
+
+    [class~=errr] {
+        font-size: .75pc;
+    }
+
+    [class~=errr] {
+        margin-bottom: 1rem;
+    }
+
+    [class~=errr] [class~=link] p {
+        border-top-color: #eee;
+    }
+
+    [class~=sublogin] form [class~=flex] #checkbox {
+        width: 15px;
+    }
+
+    [class~=errr] [class~=link] p {
+        border-image: none;
+    }
+
+    [class~=errr] [class~=link] p {
+        width: 75%;
+    }
+
+    [class~=errr] {
+        min-height: 24pt;
+    }
+
+    [class~=sublogin] form select {
+        padding-top: 1.5pt;
+    }
+
+    [class~=errr] [class~=link] span {
+        color: green;
+    }
+
+    [class~=content_second_cont_veification], [class~=content_second_cont] {
+        display: none;
+    }
+
+    [class~=sublogin] [class~=error] {
+        padding-top: .0625in;
+    }
+
+    [class~=sublogin] form [class~=flex] #checkbox {
+        height: 15px;
+    }
+
+    [class~=sublogin] form [class~=flex] #checkbox {
+        margin-right: 3px;
+    }
+
+    [class~=sublogin] form [class~=flex] #checkbox {
+        background: #00f;
+    }
+
+    body {
+        overflow-x: hidden;
+    }
+}
+form .field .error-txt{
+    color: #dc3545;
+    text-align: left;
+    margin-bottom: 5px;
+  }
+  form .field .error{
+    display: none;
+  }
+  form .field.error .error{
+    display: block;
+  }
+
+
+
+  .fille .error-txt{
+    color: #dc3545;
+    text-align: left;
+    margin-bottom: 5px;
+  }
+  .field .error{
+    display: none;
+  }
+  .field.error .error{
+    display: block;
+  }
